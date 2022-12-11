@@ -1,1 +1,76 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family:"Lato", sans-serif;
+    font-weight: 450;
+    line-height: 1.9em;
+    color:#666;
+}
+.img1, .img2, .img3{
+    position: relative;
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
+
+.img1{
+    background-image: url(https://images.pexels.com/photos/21787/pexels-photo.jpg);
+    min-height: 100%;
+}
+
+.img2{
+    background-image: url(https://images.pexels.com/photos/356831/pexels-photo-356831.jpeg);
+    min-height: 400px;
+}
+
+.img3{
+    background-image: url(https://images.pexels.com/photos/46231/water-lilies-pink-water-lake-46231.jpeg);
+    min-height: 400px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+
+.sec-1{
+    background-color: aliceblue;
+    color: rgb(58, 58, 58);
+}
+.sec-2{
+    background-color: #282e35;
+    color: #fff;
+}
+
+.text{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+.text .border{
+    background-color: rgb(62, 62, 85);
+    color: #fff;
+    padding: 20px;
+}
+
+.text .border.trans{
+    background-color: transparent;
+}
+
+@media(max-width : 568px){
+    .img1, .img2, .img3{
+        background-attachment:scroll;
+    }
+}
